@@ -37,6 +37,7 @@
         //二维码
         if ([self.captureSession canAddOutput:self.captureMetadataOutput])[self.captureSession addOutput:self.captureMetadataOutput];
         
+        //需在添加到输出设备后,方可设置
         self.captureMetadataOutput.metadataObjectTypes = [self.captureMetadataOutput availableMetadataObjectTypes];
 
         //拍照
@@ -83,12 +84,12 @@
 //拍照
 - (void)takingPictures{
     if (self.captureMode != XKCaptureMetadataModePhoto) return;
-    AVCaptureConnection * videoConnection = [self.stillImageOutput connectionWithMediaType:AVMediaTypeVideo];
+    AVCaptureConnection * videoConnection = [self.stillImageOutput connectionWithMediaType:AVMediaTypeVideo];     
     if (!videoConnection) {
         NSLog(@"take photo failed!");
         return;
     }
-    
+
     WeakSelf(ws);
     [self.stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef  _Nullable imageDataSampleBuffer, NSError * _Nullable error) {
         if (imageDataSampleBuffer == NULL) {
@@ -129,7 +130,7 @@
 }
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate (二维码)
-- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+- (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
     if (metadataObjects.count && self.captureMode == XKCaptureMetadataModeCode) {
         AVMetadataMachineReadableCodeObject * metadataObject = metadataObjects.firstObject;
         if ([metadataObject.type isEqualToString:AVMetadataObjectTypeQRCode]) {
@@ -180,6 +181,7 @@
 }
 
 #pragma mark --懒加载
+//捕捉设备
 - (AVCaptureDevice *)captureDevice{
     if (!_captureDevice) {
         _captureDevice =  [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -187,6 +189,7 @@
     return _captureDevice;
 }
 
+//输入
 - (AVCaptureDeviceInput *)captureDeviceInput{
     if (!_captureDeviceInput) {
         _captureDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:self.captureDevice error:nil];

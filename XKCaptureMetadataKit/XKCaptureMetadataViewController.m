@@ -220,6 +220,7 @@
     if (!_captureMetadataController) {
         WeakSelf(ws);
         _captureMetadataController = [[XKCaptureMetadataController alloc] initWithFrame:CGRectMake(0, INVALID_VIEW_HEIGHT + 50, SCREEN_WIDTH, SCREEN_HEIGHT - INVALID_VIEW_HEIGHT - 50)];
+        _captureMetadataController.isAllowSaveAlbum = YES;
         _captureMetadataController.onCaptureMetadataResultBlock = ^(XKCaptureMetadataMode captureMode, id  _Nonnull resultData) {
             if (ws.isDisappear) return; //防止多次Push
             XKCaptureMetadataResultsViewController * vc = [XKCaptureMetadataResultsViewController new];
