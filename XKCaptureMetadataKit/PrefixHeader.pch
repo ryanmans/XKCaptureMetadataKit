@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  XKCaptureMetadataKit
+//
+//  Created by ALLen、 LAS on 2019/1/2.
+//  Copyright © 2019年 ALLen、 LAS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import "UIView+Frame.h"
+#import "UIView+Toast.h"
+#import "UIColor+XK.h"
+#import "UIDevice+XK.h"
+
+#import "Masonry.h"
+
+//屏幕宽
+#define SCREEN_WIDTH             ([UIScreen mainScreen].bounds.size.width)
+
+//屏幕高
+#define SCREEN_HEIGHT            ([UIScreen mainScreen].bounds.size.height)
+
+//状态栏
+#define STATUS_BAR_HEIGHT        [[UIApplication sharedApplication] statusBarFrame].size.height
+
+//导航高度(控制器使用)
+#define NAVIGATION_BAR_HEIGHT    (self.navigationController.navigationBar.frame.size.height)
+
+//tabbar高度(控制器使用)
+#define TAB_BAR_HEIGHT           (self.tabBarController.tabBar.frame.size.height)
+
+//无效高度(状态栏和导航高度)
+#define INVALID_VIEW_HEIGHT      (STATUS_BAR_HEIGHT + NAVIGATION_BAR_HEIGHT)
+
+//可用视图高度
+#define VALID_VIEW_HEIGHT        (SCREEN_HEIGHT - INVALID_VIEW_HEIGHT)
+
+
+#define WeakSelf(x)         __weak typeof (self) x = self
+
+//重写NSLog,Debug模式下打印日志和当前行数
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+
+#endif /* PrefixHeader_pch */

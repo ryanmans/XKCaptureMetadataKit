@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		192CA3FC21DC684E00EE6DAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA3FB21DC684E00EE6DAB /* AppDelegate.m */; };
+		192CA3FF21DC684E00EE6DAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA3FE21DC684E00EE6DAB /* ViewController.m */; };
+		192CA40221DC684E00EE6DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192CA40021DC684E00EE6DAB /* Main.storyboard */; };
+		192CA40421DC685000EE6DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192CA40321DC685000EE6DAB /* Assets.xcassets */; };
+		192CA40721DC685000EE6DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192CA40521DC685000EE6DAB /* LaunchScreen.storyboard */; };
+		192CA40A21DC685000EE6DAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA40921DC685000EE6DAB /* main.m */; };
+		192CA41421DC685000EE6DAB /* XKCaptureMetadataKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA41321DC685000EE6DAB /* XKCaptureMetadataKitTests.m */; };
+		192CA41F21DC685000EE6DAB /* XKCaptureMetadataKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA41E21DC685000EE6DAB /* XKCaptureMetadataKitUITests.m */; };
+		192CA44321DC69D200EE6DAB /* XKCaptureMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA44221DC69D200EE6DAB /* XKCaptureMetadataViewController.m */; };
+		192CA44721DC8CB300EE6DAB /* XKCaptureMetadataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA44621DC8CB300EE6DAB /* XKCaptureMetadataController.m */; };
+		192CA44A21DC989D00EE6DAB /* XKCaptureMetadataContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA44921DC989D00EE6DAB /* XKCaptureMetadataContentView.m */; };
+		192CA44D21DC98C600EE6DAB /* XKCaptureAreaAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA44C21DC98C600EE6DAB /* XKCaptureAreaAnimationView.m */; };
+		192CA45021DC9B1A00EE6DAB /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA44F21DC9B1A00EE6DAB /* UIView+Frame.m */; };
+		192CA45321DC9D6E00EE6DAB /* UIColor+XK.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA45221DC9D6E00EE6DAB /* UIColor+XK.m */; };
+		192CA45621DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA45521DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.m */; };
+		192CA45A21DCA0A000EE6DAB /* XKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA45921DCA0A000EE6DAB /* XKBaseViewController.m */; };
+		192CA45D21DCA0CE00EE6DAB /* XKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA45C21DCA0CE00EE6DAB /* XKBaseNavigationController.m */; };
+		192CA46021DCA30300EE6DAB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA45E21DCA30300EE6DAB /* UIView+Toast.m */; };
+		192CA46321DCA50D00EE6DAB /* UIDevice+XK.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA46221DCA50D00EE6DAB /* UIDevice+XK.m */; };
+		192CA46621DCA7D400EE6DAB /* XKTabBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA46521DCA7D400EE6DAB /* XKTabBarMenu.m */; };
+		192CA46C21DCA94800EE6DAB /* XKPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192CA46B21DCA94800EE6DAB /* XKPagerController.m */; };
+		3F73A412EF5DA87D13147574 /* libPods-XKCaptureMetadataKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D53D765BB4278CF981745B /* libPods-XKCaptureMetadataKitTests.a */; };
+		9342CF13B85730AAEB136E93 /* libPods-XKCaptureMetadataKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F4A6290422CE697712FF7F /* libPods-XKCaptureMetadataKitUITests.a */; };
+		B382B94CDA18A8DA6C6ED8B5 /* libPods-XKCaptureMetadataKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA2361F510F1F75CADBF716 /* libPods-XKCaptureMetadataKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		192CA41021DC685000EE6DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 192CA3EF21DC684E00EE6DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192CA3F621DC684E00EE6DAB;
+			remoteInfo = XKCaptureMetadataKit;
+		};
+		192CA41B21DC685000EE6DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 192CA3EF21DC684E00EE6DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192CA3F621DC684E00EE6DAB;
+			remoteInfo = XKCaptureMetadataKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		192CA3F721DC684E00EE6DAB /* XKCaptureMetadataKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCaptureMetadataKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		192CA3FA21DC684E00EE6DAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		192CA3FB21DC684E00EE6DAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		192CA3FD21DC684E00EE6DAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		192CA3FE21DC684E00EE6DAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		192CA40121DC684E00EE6DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		192CA40321DC685000EE6DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		192CA40621DC685000EE6DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		192CA40821DC685000EE6DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192CA40921DC685000EE6DAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		192CA40F21DC685000EE6DAB /* XKCaptureMetadataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKCaptureMetadataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		192CA41321DC685000EE6DAB /* XKCaptureMetadataKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureMetadataKitTests.m; sourceTree = "<group>"; };
+		192CA41521DC685000EE6DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192CA41A21DC685000EE6DAB /* XKCaptureMetadataKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKCaptureMetadataKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		192CA41E21DC685000EE6DAB /* XKCaptureMetadataKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureMetadataKitUITests.m; sourceTree = "<group>"; };
+		192CA42021DC685000EE6DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192CA44121DC69D200EE6DAB /* XKCaptureMetadataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKCaptureMetadataViewController.h; sourceTree = "<group>"; };
+		192CA44221DC69D200EE6DAB /* XKCaptureMetadataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureMetadataViewController.m; sourceTree = "<group>"; };
+		192CA44421DC6A8300EE6DAB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		192CA44521DC8CB300EE6DAB /* XKCaptureMetadataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKCaptureMetadataController.h; sourceTree = "<group>"; };
+		192CA44621DC8CB300EE6DAB /* XKCaptureMetadataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureMetadataController.m; sourceTree = "<group>"; };
+		192CA44821DC989D00EE6DAB /* XKCaptureMetadataContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKCaptureMetadataContentView.h; sourceTree = "<group>"; };
+		192CA44921DC989D00EE6DAB /* XKCaptureMetadataContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureMetadataContentView.m; sourceTree = "<group>"; };
+		192CA44B21DC98C600EE6DAB /* XKCaptureAreaAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKCaptureAreaAnimationView.h; sourceTree = "<group>"; };
+		192CA44C21DC98C600EE6DAB /* XKCaptureAreaAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureAreaAnimationView.m; sourceTree = "<group>"; };
+		192CA44E21DC9B1A00EE6DAB /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		192CA44F21DC9B1A00EE6DAB /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		192CA45121DC9D6E00EE6DAB /* UIColor+XK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+XK.h"; sourceTree = "<group>"; };
+		192CA45221DC9D6E00EE6DAB /* UIColor+XK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XK.m"; sourceTree = "<group>"; };
+		192CA45421DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKCaptureMetadataResultsViewController.h; sourceTree = "<group>"; };
+		192CA45521DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKCaptureMetadataResultsViewController.m; sourceTree = "<group>"; };
+		192CA45821DCA0A000EE6DAB /* XKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKBaseViewController.h; sourceTree = "<group>"; };
+		192CA45921DCA0A000EE6DAB /* XKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKBaseViewController.m; sourceTree = "<group>"; };
+		192CA45B21DCA0CE00EE6DAB /* XKBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKBaseNavigationController.h; sourceTree = "<group>"; };
+		192CA45C21DCA0CE00EE6DAB /* XKBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKBaseNavigationController.m; sourceTree = "<group>"; };
+		192CA45E21DCA30300EE6DAB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		192CA45F21DCA30300EE6DAB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		192CA46121DCA50D00EE6DAB /* UIDevice+XK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XK.h"; sourceTree = "<group>"; };
+		192CA46221DCA50D00EE6DAB /* UIDevice+XK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XK.m"; sourceTree = "<group>"; };
+		192CA46421DCA7D400EE6DAB /* XKTabBarMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKTabBarMenu.h; sourceTree = "<group>"; };
+		192CA46521DCA7D400EE6DAB /* XKTabBarMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKTabBarMenu.m; sourceTree = "<group>"; };
+		192CA46A21DCA94800EE6DAB /* XKPagerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKPagerController.h; sourceTree = "<group>"; };
+		192CA46B21DCA94800EE6DAB /* XKPagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKPagerController.m; sourceTree = "<group>"; };
+		1E2276931D690D4921FA2A70 /* Pods-XKCaptureMetadataKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCaptureMetadataKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCaptureMetadataKit/Pods-XKCaptureMetadataKit.release.xcconfig"; sourceTree = "<group>"; };
+		91F4A6290422CE697712FF7F /* libPods-XKCaptureMetadataKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKCaptureMetadataKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA2361F510F1F75CADBF716 /* libPods-XKCaptureMetadataKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKCaptureMetadataKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C1B4B1E3259DD900BF018C /* Pods-XKCaptureMetadataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCaptureMetadataKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKCaptureMetadataKit/Pods-XKCaptureMetadataKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CD20B8DF66311816BEE9E862 /* Pods-XKCaptureMetadataKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCaptureMetadataKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCaptureMetadataKitTests/Pods-XKCaptureMetadataKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		D303E76F4A3568D09203EBBB /* Pods-XKCaptureMetadataKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCaptureMetadataKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKCaptureMetadataKitTests/Pods-XKCaptureMetadataKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D53D765BB4278CF981745B /* libPods-XKCaptureMetadataKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKCaptureMetadataKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC203CACB03801D1A0B929A /* Pods-XKCaptureMetadataKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCaptureMetadataKitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKCaptureMetadataKitUITests/Pods-XKCaptureMetadataKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1EFB31B1B6611D0E559C692 /* Pods-XKCaptureMetadataKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCaptureMetadataKitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCaptureMetadataKitUITests/Pods-XKCaptureMetadataKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		192CA3F421DC684E00EE6DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B382B94CDA18A8DA6C6ED8B5 /* libPods-XKCaptureMetadataKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192CA40C21DC685000EE6DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F73A412EF5DA87D13147574 /* libPods-XKCaptureMetadataKitTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192CA41721DC685000EE6DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9342CF13B85730AAEB136E93 /* libPods-XKCaptureMetadataKitUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192CA3EE21DC684E00EE6DAB = {
+			isa = PBXGroup;
+			children = (
+				192CA3F921DC684E00EE6DAB /* XKCaptureMetadataKit */,
+				192CA41221DC685000EE6DAB /* XKCaptureMetadataKitTests */,
+				192CA41D21DC685000EE6DAB /* XKCaptureMetadataKitUITests */,
+				192CA3F821DC684E00EE6DAB /* Products */,
+				2A07C6FBD077944A44B64D4D /* Pods */,
+				993298725F1DE1A1D249AEAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		192CA3F821DC684E00EE6DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				192CA3F721DC684E00EE6DAB /* XKCaptureMetadataKit.app */,
+				192CA40F21DC685000EE6DAB /* XKCaptureMetadataKitTests.xctest */,
+				192CA41A21DC685000EE6DAB /* XKCaptureMetadataKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		192CA3F921DC684E00EE6DAB /* XKCaptureMetadataKit */ = {
+			isa = PBXGroup;
+			children = (
+				192CA45721DCA08200EE6DAB /* Base */,
+				192CA44021DC699500EE6DAB /* XKCaptureMetadataKit */,
+				192CA3FA21DC684E00EE6DAB /* AppDelegate.h */,
+				192CA3FB21DC684E00EE6DAB /* AppDelegate.m */,
+				192CA3FD21DC684E00EE6DAB /* ViewController.h */,
+				192CA3FE21DC684E00EE6DAB /* ViewController.m */,
+				192CA46421DCA7D400EE6DAB /* XKTabBarMenu.h */,
+				192CA46521DCA7D400EE6DAB /* XKTabBarMenu.m */,
+				192CA46A21DCA94800EE6DAB /* XKPagerController.h */,
+				192CA46B21DCA94800EE6DAB /* XKPagerController.m */,
+				192CA44121DC69D200EE6DAB /* XKCaptureMetadataViewController.h */,
+				192CA44221DC69D200EE6DAB /* XKCaptureMetadataViewController.m */,
+				192CA45421DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.h */,
+				192CA45521DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.m */,
+				192CA40021DC684E00EE6DAB /* Main.storyboard */,
+				192CA40321DC685000EE6DAB /* Assets.xcassets */,
+				192CA40521DC685000EE6DAB /* LaunchScreen.storyboard */,
+				192CA40821DC685000EE6DAB /* Info.plist */,
+				192CA44421DC6A8300EE6DAB /* PrefixHeader.pch */,
+				192CA40921DC685000EE6DAB /* main.m */,
+			);
+			path = XKCaptureMetadataKit;
+			sourceTree = "<group>";
+		};
+		192CA41221DC685000EE6DAB /* XKCaptureMetadataKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				192CA41321DC685000EE6DAB /* XKCaptureMetadataKitTests.m */,
+				192CA41521DC685000EE6DAB /* Info.plist */,
+			);
+			path = XKCaptureMetadataKitTests;
+			sourceTree = "<group>";
+		};
+		192CA41D21DC685000EE6DAB /* XKCaptureMetadataKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				192CA41E21DC685000EE6DAB /* XKCaptureMetadataKitUITests.m */,
+				192CA42021DC685000EE6DAB /* Info.plist */,
+			);
+			path = XKCaptureMetadataKitUITests;
+			sourceTree = "<group>";
+		};
+		192CA44021DC699500EE6DAB /* XKCaptureMetadataKit */ = {
+			isa = PBXGroup;
+			children = (
+				192CA44E21DC9B1A00EE6DAB /* UIView+Frame.h */,
+				192CA44F21DC9B1A00EE6DAB /* UIView+Frame.m */,
+				192CA45121DC9D6E00EE6DAB /* UIColor+XK.h */,
+				192CA45221DC9D6E00EE6DAB /* UIColor+XK.m */,
+				192CA45F21DCA30300EE6DAB /* UIView+Toast.h */,
+				192CA45E21DCA30300EE6DAB /* UIView+Toast.m */,
+				192CA46121DCA50D00EE6DAB /* UIDevice+XK.h */,
+				192CA46221DCA50D00EE6DAB /* UIDevice+XK.m */,
+				192CA44B21DC98C600EE6DAB /* XKCaptureAreaAnimationView.h */,
+				192CA44C21DC98C600EE6DAB /* XKCaptureAreaAnimationView.m */,
+				192CA44821DC989D00EE6DAB /* XKCaptureMetadataContentView.h */,
+				192CA44921DC989D00EE6DAB /* XKCaptureMetadataContentView.m */,
+				192CA44521DC8CB300EE6DAB /* XKCaptureMetadataController.h */,
+				192CA44621DC8CB300EE6DAB /* XKCaptureMetadataController.m */,
+			);
+			path = XKCaptureMetadataKit;
+			sourceTree = "<group>";
+		};
+		192CA45721DCA08200EE6DAB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				192CA45821DCA0A000EE6DAB /* XKBaseViewController.h */,
+				192CA45921DCA0A000EE6DAB /* XKBaseViewController.m */,
+				192CA45B21DCA0CE00EE6DAB /* XKBaseNavigationController.h */,
+				192CA45C21DCA0CE00EE6DAB /* XKBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2A07C6FBD077944A44B64D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8C1B4B1E3259DD900BF018C /* Pods-XKCaptureMetadataKit.debug.xcconfig */,
+				1E2276931D690D4921FA2A70 /* Pods-XKCaptureMetadataKit.release.xcconfig */,
+				D303E76F4A3568D09203EBBB /* Pods-XKCaptureMetadataKitTests.debug.xcconfig */,
+				CD20B8DF66311816BEE9E862 /* Pods-XKCaptureMetadataKitTests.release.xcconfig */,
+				EAC203CACB03801D1A0B929A /* Pods-XKCaptureMetadataKitUITests.debug.xcconfig */,
+				F1EFB31B1B6611D0E559C692 /* Pods-XKCaptureMetadataKitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		993298725F1DE1A1D249AEAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCA2361F510F1F75CADBF716 /* libPods-XKCaptureMetadataKit.a */,
+				E1D53D765BB4278CF981745B /* libPods-XKCaptureMetadataKitTests.a */,
+				91F4A6290422CE697712FF7F /* libPods-XKCaptureMetadataKitUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		192CA3F621DC684E00EE6DAB /* XKCaptureMetadataKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192CA42321DC685000EE6DAB /* Build configuration list for PBXNativeTarget "XKCaptureMetadataKit" */;
+			buildPhases = (
+				22A864FD7FACEB0EA5C46736 /* [CP] Check Pods Manifest.lock */,
+				192CA3F321DC684E00EE6DAB /* Sources */,
+				192CA3F421DC684E00EE6DAB /* Frameworks */,
+				192CA3F521DC684E00EE6DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XKCaptureMetadataKit;
+			productName = XKCaptureMetadataKit;
+			productReference = 192CA3F721DC684E00EE6DAB /* XKCaptureMetadataKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		192CA40E21DC685000EE6DAB /* XKCaptureMetadataKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192CA42621DC685000EE6DAB /* Build configuration list for PBXNativeTarget "XKCaptureMetadataKitTests" */;
+			buildPhases = (
+				B164554A6CB3E989D2ADC015 /* [CP] Check Pods Manifest.lock */,
+				192CA40B21DC685000EE6DAB /* Sources */,
+				192CA40C21DC685000EE6DAB /* Frameworks */,
+				192CA40D21DC685000EE6DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				192CA41121DC685000EE6DAB /* PBXTargetDependency */,
+			);
+			name = XKCaptureMetadataKitTests;
+			productName = XKCaptureMetadataKitTests;
+			productReference = 192CA40F21DC685000EE6DAB /* XKCaptureMetadataKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		192CA41921DC685000EE6DAB /* XKCaptureMetadataKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192CA42921DC685000EE6DAB /* Build configuration list for PBXNativeTarget "XKCaptureMetadataKitUITests" */;
+			buildPhases = (
+				C30F307C66BAF1CD5017E381 /* [CP] Check Pods Manifest.lock */,
+				192CA41621DC685000EE6DAB /* Sources */,
+				192CA41721DC685000EE6DAB /* Frameworks */,
+				192CA41821DC685000EE6DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				192CA41C21DC685000EE6DAB /* PBXTargetDependency */,
+			);
+			name = XKCaptureMetadataKitUITests;
+			productName = XKCaptureMetadataKitUITests;
+			productReference = 192CA41A21DC685000EE6DAB /* XKCaptureMetadataKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		192CA3EF21DC684E00EE6DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XK;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "ALLen、 LAS";
+				TargetAttributes = {
+					192CA3F621DC684E00EE6DAB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					192CA40E21DC685000EE6DAB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 192CA3F621DC684E00EE6DAB;
+					};
+					192CA41921DC685000EE6DAB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 192CA3F621DC684E00EE6DAB;
+					};
+				};
+			};
+			buildConfigurationList = 192CA3F221DC684E00EE6DAB /* Build configuration list for PBXProject "XKCaptureMetadataKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 192CA3EE21DC684E00EE6DAB;
+			productRefGroup = 192CA3F821DC684E00EE6DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				192CA3F621DC684E00EE6DAB /* XKCaptureMetadataKit */,
+				192CA40E21DC685000EE6DAB /* XKCaptureMetadataKitTests */,
+				192CA41921DC685000EE6DAB /* XKCaptureMetadataKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		192CA3F521DC684E00EE6DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192CA40721DC685000EE6DAB /* LaunchScreen.storyboard in Resources */,
+				192CA40421DC685000EE6DAB /* Assets.xcassets in Resources */,
+				192CA40221DC684E00EE6DAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192CA40D21DC685000EE6DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192CA41821DC685000EE6DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22A864FD7FACEB0EA5C46736 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XKCaptureMetadataKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B164554A6CB3E989D2ADC015 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XKCaptureMetadataKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C30F307C66BAF1CD5017E381 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XKCaptureMetadataKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		192CA3F321DC684E00EE6DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192CA45021DC9B1A00EE6DAB /* UIView+Frame.m in Sources */,
+				192CA3FF21DC684E00EE6DAB /* ViewController.m in Sources */,
+				192CA46321DCA50D00EE6DAB /* UIDevice+XK.m in Sources */,
+				192CA44D21DC98C600EE6DAB /* XKCaptureAreaAnimationView.m in Sources */,
+				192CA46C21DCA94800EE6DAB /* XKPagerController.m in Sources */,
+				192CA44321DC69D200EE6DAB /* XKCaptureMetadataViewController.m in Sources */,
+				192CA46621DCA7D400EE6DAB /* XKTabBarMenu.m in Sources */,
+				192CA44721DC8CB300EE6DAB /* XKCaptureMetadataController.m in Sources */,
+				192CA45D21DCA0CE00EE6DAB /* XKBaseNavigationController.m in Sources */,
+				192CA40A21DC685000EE6DAB /* main.m in Sources */,
+				192CA45621DCA04200EE6DAB /* XKCaptureMetadataResultsViewController.m in Sources */,
+				192CA46021DCA30300EE6DAB /* UIView+Toast.m in Sources */,
+				192CA3FC21DC684E00EE6DAB /* AppDelegate.m in Sources */,
+				192CA45321DC9D6E00EE6DAB /* UIColor+XK.m in Sources */,
+				192CA44A21DC989D00EE6DAB /* XKCaptureMetadataContentView.m in Sources */,
+				192CA45A21DCA0A000EE6DAB /* XKBaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192CA40B21DC685000EE6DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192CA41421DC685000EE6DAB /* XKCaptureMetadataKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192CA41621DC685000EE6DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192CA41F21DC685000EE6DAB /* XKCaptureMetadataKitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		192CA41121DC685000EE6DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 192CA3F621DC684E00EE6DAB /* XKCaptureMetadataKit */;
+			targetProxy = 192CA41021DC685000EE6DAB /* PBXContainerItemProxy */;
+		};
+		192CA41C21DC685000EE6DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 192CA3F621DC684E00EE6DAB /* XKCaptureMetadataKit */;
+			targetProxy = 192CA41B21DC685000EE6DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		192CA40021DC684E00EE6DAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				192CA40121DC684E00EE6DAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		192CA40521DC685000EE6DAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				192CA40621DC685000EE6DAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		192CA42121DC685000EE6DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		192CA42221DC685000EE6DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		192CA42421DC685000EE6DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C1B4B1E3259DD900BF018C /* Pods-XKCaptureMetadataKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93NAX8BU5X;
+				GCC_PREFIX_HEADER = XKCaptureMetadataKit/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+				);
+				INFOPLIST_FILE = XKCaptureMetadataKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKCaptureMetadataKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Debug;
+		};
+		192CA42521DC685000EE6DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2276931D690D4921FA2A70 /* Pods-XKCaptureMetadataKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93NAX8BU5X;
+				GCC_PREFIX_HEADER = XKCaptureMetadataKit/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+				);
+				INFOPLIST_FILE = XKCaptureMetadataKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKCaptureMetadataKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Release;
+		};
+		192CA42721DC685000EE6DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D303E76F4A3568D09203EBBB /* Pods-XKCaptureMetadataKitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKCaptureMetadataKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKCaptureMetadataKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XKCaptureMetadataKit.app/XKCaptureMetadataKit";
+			};
+			name = Debug;
+		};
+		192CA42821DC685000EE6DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD20B8DF66311816BEE9E862 /* Pods-XKCaptureMetadataKitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKCaptureMetadataKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKCaptureMetadataKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XKCaptureMetadataKit.app/XKCaptureMetadataKit";
+			};
+			name = Release;
+		};
+		192CA42A21DC685000EE6DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC203CACB03801D1A0B929A /* Pods-XKCaptureMetadataKitUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKCaptureMetadataKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKCaptureMetadataKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XKCaptureMetadataKit;
+			};
+			name = Debug;
+		};
+		192CA42B21DC685000EE6DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1EFB31B1B6611D0E559C692 /* Pods-XKCaptureMetadataKitUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKCaptureMetadataKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKCaptureMetadataKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XKCaptureMetadataKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		192CA3F221DC684E00EE6DAB /* Build configuration list for PBXProject "XKCaptureMetadataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192CA42121DC685000EE6DAB /* Debug */,
+				192CA42221DC685000EE6DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		192CA42321DC685000EE6DAB /* Build configuration list for PBXNativeTarget "XKCaptureMetadataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192CA42421DC685000EE6DAB /* Debug */,
+				192CA42521DC685000EE6DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		192CA42621DC685000EE6DAB /* Build configuration list for PBXNativeTarget "XKCaptureMetadataKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192CA42721DC685000EE6DAB /* Debug */,
+				192CA42821DC685000EE6DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		192CA42921DC685000EE6DAB /* Build configuration list for PBXNativeTarget "XKCaptureMetadataKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192CA42A21DC685000EE6DAB /* Debug */,
+				192CA42B21DC685000EE6DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 192CA3EF21DC684E00EE6DAB /* Project object */;
+}
